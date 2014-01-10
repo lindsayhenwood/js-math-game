@@ -1,0 +1,52 @@
+var input1 = prompt("Give me a value:");
+var input2 = prompt("Give me another value:");
+
+
+console.log('input1: ', input1);
+console.log('input2: ', input2);
+
+
+function compare(left, right) {
+	if(left == right)
+	{
+		alert("The values are the same!")
+	} else {
+		alert("The values are different!")
+	}
+}
+
+function getValue(){
+	return prompt("Give me a value: ")
+}
+
+function run(){
+var input1 = getValue();
+var input2 = getValue();
+compare(input1, input2);
+}
+
+run();
+
+
+//GAME
+//Initial values
+var bankBalance = 100;
+
+//keep doing this until you broke it
+
+while (bankBalance > 0) {
+var betAmount = prompt("What do you bet?");
+var actualNumber = 5;
+var guessNumber = prompt("What number do you choose between 1 and 10?");
+
+if (actualNumber == guessNumber) {
+	bankBalance += betAmount * 3;
+} else if ((Number(guessNumber) + 1 == actualNumber) || ((Number(actualNumber) + 1 == guessNumber)) {
+	//nothing happens
+} else {
+	bankBalance -= betAmount;
+}
+
+alert(bankBalance);
+}
+
