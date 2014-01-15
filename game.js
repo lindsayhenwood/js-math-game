@@ -12,6 +12,7 @@ var n1 = Math.round(Math.random() * 20);
 var n2 = Math.round(Math.random() * 20);
 question += n1
 
+
 switch(n1)
 	case '0.333333':
 	{
@@ -27,6 +28,8 @@ switch(n1)
 	{
 		console.log("-");
 	}
+
+	//console.log(n1, 
 
 
 var randomQuestion = function {

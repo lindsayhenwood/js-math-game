@@ -1,0 +1,16 @@
+player1 starts with 3 lives player2 starts with 3 lives
+
+player1 starts off as the currentPlayer
+
+generate a random leftNumber generate a random rightNumber generate the (addition) question based on leftNumber and rightNumber (eg: "What is 5 + 5")
+
+ask the currentPlayer a question compare the answer to the computedAnswer
+
+if the answer is correct, let them know otherwise reduce the currentPlayer's life by 1
+
+if the currentPlayer's life is now 0, end the game (and declare the winner)
+
+switch currentPlayer to point to the other player
+if currentPlayer is 1, go to 2, otherwise go to 1
+
+go back to line 7 (random number generation)
